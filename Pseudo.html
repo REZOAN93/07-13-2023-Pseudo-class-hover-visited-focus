@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn-primary {
+        border: none;
+        border-radius: 10px;
+        background-color: blueviolet;
+        padding: 20px 35px;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+      }
+      .btn-primary:hover {
+        background-color: goldenrod;
+        color: black;
+      }
+      input {
+        margin-top: 20px;
+        width: 50%;
+        height: 40px;
+        border-radius: 10px;
+      }
+      input:focus {
+        border: 5px solid goldenrod;
+        outline: 0px;
+      }
+      A:visited {
+        color: goldenrod;
+      }
+      li:last-child {
+        color: red;
+      }
+      li:first-child {
+        color: goldenrod;
+        background-color: aqua;
+      }
+      li:nth-child(2n) {
+        color: blueviolet;
+      }
+      li:nth-child(2n + 1) {
+        color: rgb(78, 16, 221);
+      }
+      .box {
+        border: 2px dotted grey;
+        width: 200px;
+      }
+      /* .ring {
+        position: relative;
+        left: 30px;
+        top: -40px;
+      } */
+      .swim-container {
+        position: relative;
+        border: 2px solid green;
+      }
+      .ring {
+        position: absolute;
+        top: 40px;
+      }
+      .picture-container {
+        width: 100%;
+        height: 100vh;
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        gap: 10%;
+      }
+      .boximg {
+        width: 300px;
+        height: 400px;
+        border: 1px solid aqua;
+        background-color: aqua;
+        border-radius: 50% 50% 0px 0px;
+        position: relative;
+        
+      }
+      .boxposition {
+        position: absolute;
+        top: 140px;
+        left: 40px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn-primary">Submit Data</button>
+    <div>
+      <input type="email" name="" id="" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </div>
+
+    <div style="margin-top: 50px">
+      <a href="https://www.google.com/">GOOGLE</a>
+      <a href="https://openai.com/blog/chatgpt">CHATGPT</a>
+      <a href="https://www.galeriamadragoa.pt/">MADARGAS</a>
+    </div>
+    <div>
+      <ul>
+        <li>sectetur adipisicing elit. Accusantium, perferendis?</li>
+        <li>culpa deserunt vel dicta explicabo aspernatur consequatur.</li>
+        <li>quo accusantium, nemo consequuntur! Placeat, et.</li>
+        <li>aepe in eaque eum ducimus?</li>
+        <li>o laudantium! Ducimus ipsum nostrum incidunt.</li>
+        <li>eos error eum voluptatem dolor eligendi!</li>
+        <li>m similique amet quod, alias voluptatum.</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <!-- flow Related -->
+        <li>Static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <!-- Scroll Related -->
+        <li>Fixed</li>
+        <li>sticky</li>
+      </ul>
+      <div class="swim-container">
+        <div class="box boy"><img src="/assets/boy.svg" alt="" /></div>
+        <div class="box ring"><img src="/assets/ring.svg" alt="" /></div>
+        <div class="box water"><img src="/assets/water.svg" alt="" /></div>
+      </div>
+      <div class="picture-container">
+        <div class="boximg">
+          <img class="boxposition" src="./assets/boy.svg" alt="" srcset="" />
+        </div>
+        <div class="boximg">
+          <img class="boxposition" src="./assets/ring.svg" alt="" srcset="" />
+        </div>
+        <div class="boximg">
+          <img class="boxposition" src="./assets/water.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
